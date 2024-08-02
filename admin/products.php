@@ -11,8 +11,11 @@ $products = fetch_all_products();
 
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">View Products</h1>
-
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">View Products</h1>
+        <a href="/admin/add_product.php" class="d-none d-sm-inline-block btn btn-sm btn-info shadow-sm">
+            <i class="fa-solid fa-plus"></i> Add Products</a>
+    </div>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">

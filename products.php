@@ -16,11 +16,12 @@ $products = fetch_all_products();
         padding: 40px;
     }
 
-    .row {
+
+    .product-container {
+        margin: auto;
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
-        /* Space between cards */
     }
 
     .main-title {
@@ -63,14 +64,14 @@ $products = fetch_all_products();
         </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row product-container">
             <?php
             while ($product = $products->fetch_assoc()) {
                 ?>
-                <div class="col-md-3 col-sm-6 product-card">
+                <div class="col-md-3 col-sm-6 product-card ">
                     <div class="thumbnail">
                         <a href="cart.php">
-                            <img src="<?php echo htmlspecialchars($product['image']); ?>"
+                            <img src="<?php echo '/admin/img/' . htmlspecialchars($product['image']); ?>"
                                 alt="<?php echo htmlspecialchars($product['name']); ?>">
                         </a>
                         <center>
