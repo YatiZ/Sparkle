@@ -103,17 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <button type="submit" class="d-none d-sm-inline-block btn btn-sm btn-info shadow-sm">Add Product</button>
     </form>
-    <!-- <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-dark">Development Approach</h6>
-                </div>
-                <div class="card-body">
-                    <p>Our approach is rooted in understanding and serving our customers' needs. By prioritizing
-                        customer feedback, adapting to changing trends, and offering personalized shopping experiences,
-                        we strive to develop a brand that resonates with every customer.</p>
-                    <p class="mb-0">Always greet customers with a friendly smile and try to personalize their shopping
-                        experience. Use their name when possible, remember repeat customers' preferences, and offer
-                        tailored recommendations.</p>
-                </div> -->
+ 
 </div>
 
 </body>

@@ -125,7 +125,7 @@ $con->close();
 <?php
 require 'header.php';
 ?>
-<h2 class="text-center main-title">Contact Us</h2>
+<h1 class="text-center main-title">Contact Us</h1>
 <div class="contact-container">
 
   <form class="card" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">

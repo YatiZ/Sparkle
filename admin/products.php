@@ -56,7 +56,8 @@ $products = fetch_all_products();
                                 <td><?php echo $product['price'] ?></td>
                                 <td><?php echo $product['category_name'] ?></td>
                                 <td>
-                                    Edit | Delete
+                                    <a href="edit_product.php?id=<?php echo $product['id']; ?>">Edit</a> | 
+                                    <a href="delete_product.php?id=<?php echo $product['id']; ?>" onclick="return confirm('Are you sure you want to delete this product?');">Delete</a>
                                 </td>
                             </tr>
                             <?php

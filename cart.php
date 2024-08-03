@@ -57,21 +57,21 @@ $tax = calculateTax($sum);
 $estimatedTotal = estimatedTotal($sum, $discount);
 ?>
 
-   
-    <style>
-        .container {
-            margin-top: 80px;
-        }
 
-        img {
-            width: 100%;
-            object-fit: contain;
-        }
+<style>
+    .container {
+        margin-top: 80px;
+    }
 
-        .cart-img {
-            width: 100px;
-        }
-    </style>
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .cart-img {
+        width: 100px;
+    }
+</style>
 </head>
 
 <body>
@@ -97,19 +97,20 @@ $estimatedTotal = estimatedTotal($sum, $discount);
                                 </div>
                                 <div class="d-flex">
                                     <div class="py-2 cart-img">
-                                        <img class="rounded-circle" src="<?php echo $row['image']; ?>" alt="item">
+                                        <!-- <img  src="<?php echo $row['image']; ?>" alt="item"> -->
+                                        <img class="rounded-circle"
+                                            src="<?php echo '/admin/img/' . htmlspecialchars($row['image']); ?>"
+                                            alt="<?php echo htmlspecialchars($row['name']); ?>">
                                     </div>
                                     <div class="ms-3">
                                         <div class="font-weight-bold"><?php echo $row['name']; ?></div>
                                         <div class="mt-2"><span>Each: </span><b>$<?php echo $row['price']; ?></b></div>
                                         <div class="mt-2 d-flex align-items-center">
                                             <span>Quantity: </span>
-                                            <div class="d-flex ms-2">
-                                                <button class="btn btn-secondary btn-sm"
-                                                    onclick="updateQuantity(<?php echo $row['id']; ?>, -1)">-</button>
+                                            <div class="d-flex">
+
                                                 <span class="mx-2"><?php echo $row['qty']; ?></span>
-                                                <button class="btn btn-secondary btn-sm"
-                                                    onclick="updateQuantity(<?php echo $row['id']; ?>, 1)">+</button>
+
                                             </div>
                                         </div>
                                     </div>

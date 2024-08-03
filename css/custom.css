@@ -1,6 +1,5 @@
 .navbar {
   margin-bottom: 0px;
-
 }
 
 #bannerImage {
@@ -135,15 +134,16 @@
 }
 
 .card {
-  width: 450px;
-  /* min-height: 150px; */
+  width: 100%;
+  max-width: 450px;
   background: rgba(255, 255, 255, 0.15);
-
   border: 1px solid rgba(15, 14, 14, 0.18);
   border-radius: 1rem;
   padding: 1.5rem;
   z-index: 10;
+  margin: 0 auto; /* Center the card horizontally */
 }
+
 .card:hover {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(18px);
@@ -165,4 +165,22 @@ footer {
   margin-top: 100px;
 }
 
+.main-title {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.32rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.main-title:before,
+.main-title:after {
+  content: "";
+  display: block;
+  margin: 0 0.2rem;
+  flex: 1;
+  border-bottom: 1px solid #2e8074;
+}

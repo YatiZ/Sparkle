@@ -26,25 +26,25 @@ $users = fetch_all_customers(); // Fetch customers instead of products
                             <th>Contact</th>
                             <th>City</th>
                             <th>Address</th>
-                            <th>Action</th>
+                            <!-- <th>Action</th> -->
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
-                        <th>ID</th>
+                            <th>ID</th>
                             <th>Name</th>
                             <th>Email</th>
                             <th>Contact</th>
                             <th>City</th>
                             <th>Address</th>
-                            <th>Action</th>
+                            <!-- <th>Action</th> -->
                         </tr>
                     </tfoot>
                     <tbody>
 
                         <?php
                         while ($user = $users->fetch_assoc()) {
-                        ?>
+                            ?>
                             <tr>
                                 <td><?php echo htmlspecialchars($user['id']); ?></td>
                                 <td><?php echo htmlspecialchars($user['name']); ?></td>
@@ -52,12 +52,12 @@ $users = fetch_all_customers(); // Fetch customers instead of products
                                 <td><?php echo htmlspecialchars($user['contact']); ?></td>
                                 <td><?php echo htmlspecialchars($user['city']); ?></td>
                                 <td><?php echo htmlspecialchars($user['address']); ?></td>
-                                <td>
+                                <!-- <td>
                                     <a href="edit_customer.php?id=<?php echo $user['id']; ?>">Edit</a> | 
                                     <a href="delete_customer.php?id=<?php echo $user['id']; ?>" onclick="return confirm('Are you sure you want to delete this customer?');">Delete</a>
-                                </td>
+                                </td> -->
                             </tr>
-                        <?php
+                            <?php
                         }
                         ?>
 

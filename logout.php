@@ -1,50 +1,56 @@
 <?php
-    session_start();
-    session_unset();
-    session_destroy();
+session_start();
+session_unset();
+session_destroy();
 ?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="shortcut icon" href="img/lifestyleStore.png" />
-        <title>Pink Lady</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- latest compiled and minified CSS -->
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
-        <!-- jquery library -->
-        <script type="text/javascript" src="bootstrap/js/jquery-3.2.1.min.js"></script>
-        <!-- Latest compiled and minified javascript -->
-        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-        <!-- External CSS -->
-        <link rel="stylesheet" href="css/style.css" type="text/css">
-    </head>
-    <body>
-        <div>
-            <?php
-                require 'header.php';
-            ?>
-            <br>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading"></div>
-                            <div class="panel-body">
-                                <p>You have been logged out. <a href="login.php">Login again.</a></p>
-                            </div>
+<style>
+    .main-title {
+        margin-top: 80px;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 2.32rem;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-title:before,
+    .main-title:after {
+        content: '';
+        display: block;
+        margin: 0 0.2rem;
+        flex: 1;
+        border-bottom: 1px solid #2e8074;
+    }
+</style>
+<div>
+    <?php
+    require 'header.php';
+    ?>
+    <br>
+    <h1 class="main-title">You have been logged out.</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"></div>
+                    <div class="panel-body">
+                        
+                        <div class="text-center">
+                            <a href="login.php" class="text-decoration-none btn btn-info">Login again.</a>
                         </div>
+
                     </div>
                 </div>
             </div>
-            <footer class="footer">
-               <div class="container">
-                <center>
-                   <p>Copyright &copy <a href="https://projectworlds.in">Projectworlds</a> Store. All Rights Reserved.</p>
-                   <p>This website is developed by Yugesh Verma</p>
-               </center>
-               </div>
-           </footer>
         </div>
-    </body>
+    </div>
+    <?php
+    require 'footer.php';
+    ?>
+</div>
+</body>
+
 </html>

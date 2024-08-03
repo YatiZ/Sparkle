@@ -4,27 +4,7 @@ session_start();
 ?>
 <style>
     .main-title {
-        margin-top: 80px;
-    }
-
-    .main-title {
-        margin-bottom: 0.5rem;
-        text-align: center;
-        font-family: 'Abril Fatface', cursive;
-        font-size: 2.32rem;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main-title:before,
-    .main-title:after {
-        content: '';
-        display: block;
-        margin: 0 0.2rem;
-        flex: 1;
-        border-bottom: 1px solid #2e8074;
+        margin-top: 100px;
     }
 
     :root {
@@ -213,7 +193,7 @@ session_start();
 <?php
 require 'header.php';
 ?>
-<div class="main-title">Shopping Help</div>
+<h1 class="main-title">Shopping Help</h1>
 <div class="wrapper container">
 
 

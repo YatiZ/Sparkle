@@ -41,8 +41,14 @@ if (isset($_SESSION['email'])) {
 
 </head>
 
+<style>
+    nav {
+        background-color: #36b9cc;
+    }
+</style>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-info fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark" id="navbar">
         <div class="container-fluid">
             <a href="index.php" class="navbar-brand">Sparkle</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -53,20 +59,14 @@ if (isset($_SESSION['email'])) {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownInformation" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"><b>Information</b></a>
+                        <a class="nav-link dropdown-toggle " href="/" id="navbarDropdownInformation" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"><b>Features</b></a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownInformation">
                             <li>
-                                <a class="dropdown-item" href="/Information.php#about-us">About Us</a>
+                                <a class="dropdown-item" href="/products.php">Products</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="/Information.php#social-risks">Social Tips</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="/Information.php#partnerships">Partnerships</a>
+                                <a class="dropdown-item" href="/blogs.php">Blogs</a>
                             </li>
                         </ul>
                     </li>
